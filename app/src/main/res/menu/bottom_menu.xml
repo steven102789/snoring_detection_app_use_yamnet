@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_question"
+        android:icon="@drawable/baseline_contact_support_24"
+        android:title="question"/>
+    <item
+        android:id="@+id/bottom_alarm_clock"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="clock"/>
+    <item
+        android:id="@+id/bottom_log"
+        android:icon="@drawable/baseline_article_24"
+        android:title="log"/>
+</menu>

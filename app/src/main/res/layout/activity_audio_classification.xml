@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sleep_shape"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".audio.AudioClassificationActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/moon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/moon_stars"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/shining_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/shining_stars"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/gray_wave"
+            />
+        <TextView
+            android:id="@+id/wake_up_time"
+            android:alpha="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="00:00"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/juliussansone_regular"/>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:paddingLeft="50dp"
+                android:text="stauts:"
+                android:fontFamily="@font/juliussansone_regular"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/outputText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:text="audio"
+                android:paddingRight="50dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/stop"
+            android:contentDescription="Stop recording button"
+            />
+    </LinearLayout>
+
+</LinearLayout>
